@@ -50,6 +50,7 @@
     <Compile Include="Code 2\INameAndCopy.cs" />
     <Compile Include="Code 2\ResearchTeamEnumerator.cs" />
     <Compile Include="Code 2\Team.cs" />
+    <Compile Include="Code 3\TestCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
