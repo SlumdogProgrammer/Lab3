@@ -2,7 +2,7 @@
 
 namespace CSharpLabs
 {
-  class Paper
+  class Paper : IComparable,IComparable<Paper>
   {
     public string Title { get; set; }
     public Person Author { get; set; }
@@ -26,5 +26,12 @@ namespace CSharpLabs
       $"Название: {Title}\t Автор: {Author}\t" +
       $"Дата: {Date.ToShortDateString()}";
 
+    public int CompareTo(Paper other) =>
+      Title.CompareTo(other.Title);
+
+
+    public int CompareTo(object obj) =>
+      Date.CompareTo((obj as Paper).Date);
+   
   }
 }
