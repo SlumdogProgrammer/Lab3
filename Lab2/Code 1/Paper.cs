@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharpLabs
 {
-  class Paper : IComparable,IComparable<Paper>
+  class Paper : IComparable, IComparer<Paper>
   {
     public string Title { get; set; }
     public Person Author { get; set; }
@@ -26,12 +27,11 @@ namespace CSharpLabs
       $"Название: {Title}\t Автор: {Author}\t" +
       $"Дата: {Date.ToShortDateString()}";
 
-    public int CompareTo(Paper other) =>
-      Title.CompareTo(other.Title);
-
-
     public int CompareTo(object obj) =>
       Date.CompareTo((obj as Paper).Date);
-   
+
+    public int Compare(Paper x, Paper y) =>
+      x.Title.CompareTo(y.Title);
+
   }
 }

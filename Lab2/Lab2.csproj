@@ -51,6 +51,7 @@
     <Compile Include="Code 2\ResearchTeamEnumerator.cs" />
     <Compile Include="Code 2\Team.cs" />
     <Compile Include="Code 3\PaperComparer.cs" />
+    <Compile Include="Code 3\ResearchTeamCollection.cs" />
     <Compile Include="Code 3\TestCollection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

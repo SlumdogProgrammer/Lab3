@@ -123,7 +123,16 @@ namespace CSharpLabs
       }
     }
 
-    // дополнительное задание
+    public void SortByDatePaper() =>
+      _Publications.Sort();
+
+    public void SortByTitle() =>
+      _Publications.Sort(new Paper());
+
+    public void SortByAuthorSurname() =>
+      _Publications.Sort(new PaperComparer());
+
+    // дополнительное задание Л.р. 2
     #region
     // авторы c публикациями
     public IEnumerator GetEnumerator() =>

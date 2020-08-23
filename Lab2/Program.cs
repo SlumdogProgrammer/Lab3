@@ -54,7 +54,6 @@ namespace CSharpLabs
       foreach (var pub in researchTeam.PapersForLastYear())
         Console.WriteLine(pub);
       #endregion
-
     }
   }
 }
